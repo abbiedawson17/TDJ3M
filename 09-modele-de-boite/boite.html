@@ -1,66 +1,110 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>
-			</title>
-			<style>
-			
-				* {
-				  margin: 0;
-				  padding: 0;
-				  box-sizing: border-box;
-				}
-								
-			</style>
-			
-		</head>
-		<body>
-			<div id="contenu">
-				<div class="contenuItem selecté">
-					<a name="acceuil"></a>
-					<h4>Acceuil</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="contact"></a>
-					<h4>Contact</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="aide"></a>
-					<h4>Aide</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="magasins"></a>
-					<h4>Magasins</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="legal"></a>
-					<h4>Legal</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="liens"></a>
-					<h4>Liens</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="social"></a>
-					<h4>Social</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="partenaires"></a>
-					<h4>Partenaires</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="deconnexion"></a>
-					<h4>Deconnexion</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-			</div>
-		</body>
-	</html>
+<html>
+<head>
+    <title>Boîte HTML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style de la section #contenu */
+        #contenu {
+            background-color: #f0f0f0; /* Fond clair */
+            border-radius: 10px; /* Bordures arrondies */
+            border-style: solid; /* Bordure solide */
+            border-width: 2px; /* Largeur de bordure */
+            margin-bottom: 20px; /* Marge en bas */
+            text-align: center; /* Texte centré */
+            padding: 20px;
+        }
+
+        /* Style des éléments .contenuItem */
+        .contenuItem {
+            background-color: #ffffff; /* Fond blanc */
+            border-radius: 5px; /* Bordures arrondies */
+            border-style: solid; /* Bordure solide */
+            border-width: 1px; /* Bordure fine */
+            margin-bottom: 15px; /* Marge en bas */
+            text-align: left; /* Texte aligné à gauche */
+            padding: 10px;
+        }
+
+            /* Style de la première lettre de chaque .contenuItem */
+            .contenuItem::first-letter {
+                font-size: 200%; /* Agrandir la première lettre */
+                font-weight: bold; /* Mettre la première lettre en gras */
+            }
+
+        /* Style des titres (h4) */
+        h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #333333;
+        }
+
+        /* Style du contenu textuel à l'intérieur des éléments */
+        .contenuItemContenu {
+            font-size: 1em;
+            color: #666666;
+        }
+
+        /* Style pour l'élément sélectionné */
+        .selecté {
+            background-color: #d0e0e0; /* Fond différent pour l'élément sélectionné */
+            border-color: #4CAF50; /* Bordure verte pour l'élément sélectionné */
+        }
+    </style>
+</head>
+<body>
+    <div id="contenu">
+        <div class="contenuItem selecté">
+            <a name="acceuil"></a>
+            <h4>Acceuil</h4>
+            <div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="contenuItem">
+            <a name="contact"></a>
+            <h4>Contact</h4>
+            <div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="contenuItem">
+            <a name="aide"></a>
+            <h4>Aide</h4>
+            <div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="contenuItem">
+            <a name="magasins"></a>
+            <h4>Magasins</h4>
+            <div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="contenuItem">
+            <a name="legal"></a>
+            <h4>Legal</h4>
+            <div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="contenuItem">
+            <a name="liens"></a>
+            <h4>Liens</h4>
+            <div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="contenuItem">
+            <a name="social"></a>
+            <h4>Social</h4>
+            <div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="contenuItem">
+            <a name="partenaires"></a>
+            <h4>Partenaires</h4>
+            <div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="contenuItem">
+            <a name="deconnexion"></a>
+            <h4>Deconnexion</h4>
+            <div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+    </div>
+</body>
+</html>
+Modifications 
